@@ -7,20 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <section class="player player--0 player--active--0">
-
+            <div class="wrapper wrapper--p0">
+                <div class="total">
+                    <h1 class="total__label" id="name--0">Player 1</h1>
+                    <p class="total__score" id="score--0">100</p>
+                </div>
+                <div class="current current--0 current--active">
+                    <h2 class="current__label">Current</h2>
+                    <div class="current__score" id="current-score--0">0</div>
+                </div>
+            </div>
         </section>
+
         <section class="player player--1">
-
+            <div class="wrapper wrapper--p1">
+                <div class="current current--1">
+                    <h2 class="current__label">Current</h2>
+                    <div class="current__score" id="current-score--1">0</div>
+                </div>
+                <div class="total">
+                    <h1 class="total__label" id="name--1">Player 2</h1>
+                    <p class="total__score" id="score--1">0</p>
+                </div>
+            </div>
         </section>
-        <button class="btn again"></button>
+
+
+        <button class="btn again">New game</button>
         <div class="dice"></div>
-        <button class="btn randomizer"></button>
-        <button class="btn hold"></button>
+        <button class="btn randomizer">Roll dice</button>
+        <button class="btn hold">Hold</button>
     </main>
 
     <script src="js/event.js"></script>

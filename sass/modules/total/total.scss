@@ -1,0 +1,11 @@
+.total{
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+
+    &__score{
+        font-size: 8rem;
+    }
+}

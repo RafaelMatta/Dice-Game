@@ -1,0 +1,39 @@
+.wrapper{
+    margin: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    color: $color-white;
+    text-transform: uppercase;
+    line-height: 1;
+
+    transition: all .3s ease;
+
+    &--p0{
+        align-items: flex-start;
+    }
+
+    &--p1{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+/*
+    margin: 10rem 5rem;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+
+    color: $color-white;
+    text-transform: uppercase;
+    line-height: 1;
+*/
