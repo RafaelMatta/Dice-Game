@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 body {
   background-color: #DEBB49; }
@@ -20,15 +21,21 @@ html {
 
 .player {
   position: absolute;
-  left: 0;
-  top: 0;
   background-color: rgba(43, 43, 43, 0.6);
   height: 100vh;
   width: 100%;
   transition: all .3s ease; }
   .player--0 {
-    clip-path: polygon(0 0, 70% 0, 0 70%); }
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 60% 0, 0 60%); }
   .player--1 {
-    clip-path: polygon(100% 30%, 100% 100%, 30% 100%); }
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(100% 40%, 100% 100%, 40% 100%); }
   .player--active {
     background-color: #2B2B2B; }
+    .player--active--0 {
+      clip-path: polygon(0 0, 90% 0, 0 90%); }
+    .player--active--1 {
+      clip-path: polygon(100% 10%, 100% 100%, 10% 100%); }
