@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  background-color: #DEBB49; }
+
+main {
+  position: relative;
+  height: 100vh; }
+
+html {
+  font-size: 62.5%; }
+
+.player {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(43, 43, 43, 0.6);
+  height: 100vh;
+  width: 100%;
+  transition: all .3s ease; }
+  .player--0 {
+    clip-path: polygon(0 0, 70% 0, 0 70%); }
+  .player--1 {
+    clip-path: polygon(100% 30%, 100% 100%, 30% 100%); }
+  .player--active {
+    background-color: #2B2B2B; }
