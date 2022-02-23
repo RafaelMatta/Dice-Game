@@ -23,6 +23,7 @@ html {
 .current {
   display: none;
   flex-direction: column;
+  width: 100%;
   gap: 2rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -61,23 +62,25 @@ html {
     bottom: 0;
     clip-path: polygon(100% 40%, 100% 100%, 40% 100%); }
   .player--active--0, .player--active--1 {
-    background-color: #2B2B2B; }
+    background-color: #2B2B2B;
+    z-index: 10; }
   .player--active--0 {
     clip-path: polygon(0 0, 90% 0, 0 90%); }
   .player--active--1 {
     clip-path: polygon(100% 10%, 100% 100%, 10% 100%); }
 
 .total {
-  font-size: 7rem;
+  font-size: 6rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem; }
   .total__score {
-    font-size: 8rem; }
+    font-size: 7rem; }
 
 .wrapper {
   margin: 5rem;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 5rem;

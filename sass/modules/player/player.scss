@@ -20,6 +20,7 @@
     &--active--0,
     &--active--1{
         background-color: $color-secondary;
+        z-index: 10;
     }
 
     &--active--0{
