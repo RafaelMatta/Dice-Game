@@ -1,0 +1,13 @@
+.btn{
+    &{
+        outline: none;
+        background-color: transparent;
+        border: 5px solid $color-primary;
+        border-radius: 5px;
+
+        color: $color-secondary;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+}

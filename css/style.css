@@ -1,3 +1,6 @@
+.hidden {
+  display: none !important; }
+
 *,
 *::after,
 *::before {
@@ -20,22 +23,28 @@ main {
 html {
   font-size: 62.5%; }
 
+.btn {
+  outline: none;
+  background-color: transparent;
+  border: 5px solid #DEBB49;
+  border-radius: 5px;
+  color: #2B2B2B;
+  font-size: 2rem;
+  font-weight: 700; }
+
 .current {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   gap: 2rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: all .3s ease; }
+  animation: fadeIn .4s ease forwards; }
   .current__label {
     font-size: 4rem; }
   .current__score {
     font-size: 6rem; }
-  .current--active {
-    display: flex;
-    animation: fadeIn .4s ease forwards; }
 
 @keyframes fadeIn {
   0% {
@@ -47,6 +56,15 @@ html {
 /*
     
 */
+.control {
+  display: flex;
+  gap: 5rem;
+  width: 100%; }
+  .control__btn {
+    width: 50%;
+    padding: 7rem 0;
+    background-color: #DEBB49; }
+
 .player {
   position: absolute;
   background-color: rgba(43, 43, 43, 0.6);

@@ -20,16 +20,24 @@
                     <h1 class="total__label" id="name--0">Player 1</h1>
                     <p class="total__score" id="score--0">100</p>
                 </div>
-                <div class="current current--0 current--active">
+                <div class="current current--0">
                     <h2 class="current__label">Current</h2>
                     <div class="current__score" id="current-score--0">0</div>
+                </div>
+                <div class="control control--0">
+                    <button class="btn control__btn randomizer">Roll dice</button>
+                    <button class="btn control__btn hold">Hold</button>
                 </div>
             </div>
         </section>
 
         <section class="player player--1">
             <div class="wrapper wrapper--p1">
-                <div class="current current--1">
+                <div class="control control--1 hidden">
+                    <button class="btn control__btn randomizer">Roll dice</button>
+                    <button class="btn control__btn hold">Hold</button>
+                </div>
+                <div class="current current--1 hidden">
                     <h2 class="current__label">Current</h2>
                     <div class="current__score" id="current-score--1">0</div>
                 </div>
@@ -43,8 +51,9 @@
 
         <button class="btn again">New game</button>
         <div class="dice"></div>
-        <button class="btn randomizer">Roll dice</button>
-        <button class="btn hold">Hold</button>
+
+
+
     </main>
 
     <script src="js/event.js"></script>
