@@ -1,0 +1,17 @@
+.control{
+    position: absolute;
+    left: 55%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-items: center;
+    column-gap: 5rem;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    height: 30rem;
+    transition: all .35s ease;
+
+    &__switch{
+        left: 45%;
+        top: 40%;
+    }
+}

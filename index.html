@@ -17,10 +17,10 @@
         <section class="player player--0 player--active--0">
             <div class="wrapper wrapper--p0">
                 <div class="total">
-                    <h1 class="total__label" id="name--0">Player 1</h1>
-                    <p class="total__score" id="score--0">100</p>
+                    <h1 class="total__label">Player 1</h1>
+                    <p class="total__score" id="score--0">0</p>
                 </div>
-                <div class="current current--0 current--active">
+                <div class="current current--0">
                     <h2 class="current__label">Current</h2>
                     <div class="current__score" id="current-score--0">0</div>
                 </div>
@@ -29,22 +29,28 @@
 
         <section class="player player--1">
             <div class="wrapper wrapper--p1">
-                <div class="current current--1">
+                <div class="current current--1 hidden">
                     <h2 class="current__label">Current</h2>
                     <div class="current__score" id="current-score--1">0</div>
                 </div>
                 <div class="total">
-                    <h1 class="total__label" id="name--1">Player 2</h1>
+                    <h1 class="total__label">Player 2</h1>
                     <p class="total__score" id="score--1">0</p>
                 </div>
             </div>
         </section>
 
+        <button class="btn btn--again">New game</button>
 
-        <button class="btn again">New game</button>
-        <div class="dice"></div>
-        <button class="btn randomizer">Roll dice</button>
-        <button class="btn hold">Hold</button>
+        <div class="control">
+            <button class="btn btn--roll">Roll dice</button>
+            <img src="assets/dados/d-1.png" class="dice">
+
+            <button class="btn btn--hold">Hold</button>
+        </div>
+
+
+
     </main>
 
     <script src="js/event.js"></script>

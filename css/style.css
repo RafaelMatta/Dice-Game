@@ -1,3 +1,6 @@
+.hidden {
+  display: none !important; }
+
 *,
 *::after,
 *::before {
@@ -20,22 +23,48 @@ main {
 html {
   font-size: 62.5%; }
 
+.btn {
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  color: #DEBB49;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer; }
+  .btn--again {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    padding: 1rem 0;
+    width: 16rem;
+    background-color: #DEBB49;
+    color: #2B2B2B;
+    border-radius: 100px; }
+  .btn--roll, .btn--hold {
+    background-color: #2B2B2B;
+    height: 12rem;
+    width: 12rem; }
+  .btn--roll {
+    align-self: flex-end; }
+  .btn--hold {
+    align-self: flex-start; }
+
 .current {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   gap: 2rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: all .3s ease; }
+  animation: fadeIn .4s ease forwards; }
   .current__label {
     font-size: 4rem; }
   .current__score {
     font-size: 6rem; }
-  .current--active {
-    display: flex;
-    animation: fadeIn .4s ease forwards; }
 
 @keyframes fadeIn {
   0% {
@@ -47,6 +76,26 @@ html {
 /*
     
 */
+.control {
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-items: center;
+  column-gap: 5rem;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  height: 30rem;
+  transition: all .35s ease; }
+  .control__switch {
+    left: 45%;
+    top: 40%; }
+
+.dice {
+  height: 15rem;
+  width: 15rem;
+  align-self: center; }
+
 .player {
   position: absolute;
   background-color: rgba(43, 43, 43, 0.6);

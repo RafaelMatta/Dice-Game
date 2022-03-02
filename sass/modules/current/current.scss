@@ -1,12 +1,12 @@
 .current{
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100%;
     gap: 2rem;
     border-radius: 5px;
     background-color: rgba($color-white, 0.2);
     color: $color-white;
-    transition: all .3s ease;
+    animation: fadeIn .4s ease forwards;
 
     &__label{
         font-size: 4rem;
@@ -14,11 +14,6 @@
 
     &__score{
         font-size: 6rem;
-    }
-
-    &--active{
-        display: flex;
-        animation: fadeIn .4s ease forwards;
     }
 }
 
