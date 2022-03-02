@@ -1,13 +1,40 @@
 .btn{
-    &{
-        outline: none;
-        background-color: transparent;
-        border: 5px solid $color-primary;
-        border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
 
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    &--again{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        padding: 1rem 0;
+        width: 16rem;
+        
+        background-color: $color-primary;
         color: $color-secondary;
-        font-size: 2rem;
-        font-weight: 700;
+        border-radius: 100px;
     }
 
+    &--roll,
+    &--hold{
+        background-color: $color-secondary;
+        height: 12rem;
+        width: 12rem;
+    }
+
+    &--roll{
+        align-self: flex-end;
+    }
+    &--hold{
+        align-self: flex-start;
+    }
 }
