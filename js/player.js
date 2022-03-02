@@ -75,10 +75,13 @@ btnHold.addEventListener('click', function () {
         score[currentPlayer] += currentScore;
         document.getElementById(`score--${currentPlayer}`).textContent = score[currentPlayer];
 
-        if (score[currentPlayer] < 100) {
-            switchPlayer();
-        } else {
+        if (score[currentPlayer] >= 100) {
             isGameRunning = false;
+            document
+                .querySelector(`.player--${currentPlayer}`)
+                .classList.add('player--winner');
+        } else {
+            switchPlayer();
 
         }
 
