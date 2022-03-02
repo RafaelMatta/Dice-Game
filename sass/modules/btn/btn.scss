@@ -10,6 +10,10 @@
 
     cursor: pointer;
 
+    transition: all .3s ease;
+
+    
+
     &--again{
         position: absolute;
         top: 1rem;
@@ -22,6 +26,10 @@
         background-color: $color-primary;
         color: $color-secondary;
         border-radius: 100px;
+
+        &:hover{
+            transform: translateX(-50%) scale(1.1);
+        }
     }
 
     &--roll,
@@ -29,6 +37,10 @@
         background-color: $color-secondary;
         height: 12rem;
         width: 12rem;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
     &--roll{

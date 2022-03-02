@@ -6,7 +6,8 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  user-select: none; }
 
 html {
   box-sizing: border-box;
@@ -31,7 +32,8 @@ html {
   color: #DEBB49;
   font-size: 2rem;
   font-weight: 700;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .3s ease; }
   .btn--again {
     position: absolute;
     top: 1rem;
@@ -43,10 +45,14 @@ html {
     background-color: #DEBB49;
     color: #2B2B2B;
     border-radius: 100px; }
+    .btn--again:hover {
+      transform: translateX(-50%) scale(1.1); }
   .btn--roll, .btn--hold {
     background-color: #2B2B2B;
     height: 12rem;
     width: 12rem; }
+    .btn--roll:hover, .btn--hold:hover {
+      transform: scale(1.1); }
   .btn--roll {
     align-self: flex-end; }
   .btn--hold {
@@ -117,6 +123,8 @@ html {
     clip-path: polygon(0 0, 90% 0, 0 90%); }
   .player--active--1 {
     clip-path: polygon(100% 10%, 100% 100%, 10% 100%); }
+  .player--winner {
+    background-color: #649765; }
 
 .total {
   font-size: 6rem;
