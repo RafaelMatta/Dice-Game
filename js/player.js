@@ -21,8 +21,8 @@ let currentScore;
 let currentPlayer;
 
 const resetGame = function () {
-    player0El.classList.remove('player__winner');
-    player1El.classList.remove('player__winner');
+    player0El.classList.remove('player--winner');
+    player1El.classList.remove('player--winner');
     player0El.classList.add('player--active--0');
     player1El.classList.remove('player--active--1');
     current1El.classList.add('hidden');
@@ -75,7 +75,7 @@ btnHold.addEventListener('click', function () {
         score[currentPlayer] += currentScore;
         document.getElementById(`score--${currentPlayer}`).textContent = score[currentPlayer];
 
-        if (score[currentPlayer] >= 100) {
+        if (score[currentPlayer] >= 10) {
             isGameRunning = false;
             document
                 .querySelector(`.player--${currentPlayer}`)
