@@ -75,7 +75,7 @@ btnHold.addEventListener('click', function () {
         score[currentPlayer] += currentScore;
         document.getElementById(`score--${currentPlayer}`).textContent = score[currentPlayer];
 
-        if (score[currentPlayer] >= 10) {
+        if (score[currentPlayer] >= 100) {
             isGameRunning = false;
             document
                 .querySelector(`.player--${currentPlayer}`)
